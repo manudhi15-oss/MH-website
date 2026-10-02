@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Earth & Essential Admin Panel"
+    >
+
+    <title>Admin Panel | Earth & Essential</title>
+    <script>
+    if (localStorage.getItem("earthEssentialAdmin") !== "true") {
+        window.location.href = "admin-login.html";
+    }
+     </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+
+    <div class="admin-layout">
+
+        <aside class="admin-sidebar">
+
+            <div class="admin-brand">
+
+                <a href="index.html" class="logo">
+                    <span>Earth</span> & Essential
+                </a>
+
+                <p>Admin Panel</p>
+
+            </div>
+
+
+            <nav class="admin-nav">
+
+                <button
+                    type="button"
+                    class="admin-nav-item active"
+                    data-section="dashboard"
+                >
+                    <span>⌂</span>
+                    Dashboard
+                </button>
+
+
+                <button
+                    type="button"
+                    class="admin-nav-item"
+                    data-section="products"
+                >
+                    <span>▣</span>
+                    Products
+                </button>
+
+
+                <button
+                    type="button"
+                    class="admin-nav-item"
+                    data-section="orders"
+                >
+                    <span>▤</span>
+                    Orders
+                </button>
+
+
+                <button
+                    type="button"
+                    class="admin-nav-item"
+                    data-section="sellers"
+                >
+                    <span>♙</span>
+                    Sellers
+                </button>
+
+
+                <button
+                    type="button"
+                    class="admin-nav-item"
+                    data-section="offers"
+                >
+                    <span>％</span>
+                    Offers
+                </button>
+
+
+                <button
+                    type="button"
+                    class="admin-nav-item"
+                    data-section="customers"
+                >
+                    <span>♙</span>
+                    Customers
+                </button>
+
+            </nav>
+
+
+            <div class="admin-sidebar-bottom">
+
+                <a href="index.html">
+                    ← View Website
+                </a>
+
+                <button
+                    type="button"
+                    id="adminLogout"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <main class="admin-main">
+
+            <header class="admin-header">
+
+                <div>
+
+                    <button
+                        type="button"
+                        class="admin-mobile-menu"
+                        id="adminMobileMenu"
+                        aria-label="Open admin menu"
+                    >
+                        ☰
+                    </button>
+
+                    <div class="admin-header-text">
+
+                        <span class="eyebrow">
+                            MANAGEMENT
+                        </span>
+
+                        <h1 id="adminPageTitle">
+                            Dashboard
+                        </h1>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-profile">
+
+                    <div class="admin-avatar">
+                        A
+                    </div>
+
+                    <div>
+
+                        <strong>Admin</strong>
+
+                        <span>
+                            Store Owner
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section
+                class="admin-section active"
+                id="dashboardSection"
+            >
+
+                <div class="admin-welcome">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            EARTH & ESSENTIAL
+                        </span>
+
+                        <h2>
+                            Welcome to your dashboard
+                        </h2>
+
+                        <p>
+                            Manage your beauty store,
+                            products, orders and sellers
+                            from one place.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-stats">
+
+                    <div class="admin-stat-card">
+
+                        <span class="stat-icon">
+                            ₹
+                        </span>
+
+                        <div>
+
+                            <p>Total Sales</p>
+
+                            <h3 id="totalSales">
+                                ₹0
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <span class="stat-icon">
+                            ▣
+                        </span>
+
+                        <div>
+
+                            <p>Total Products</p>
+
+                            <h3 id="totalProducts">
+                                0
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <span class="stat-icon">
+                            ▤
+                        </span>
+
+                        <div>
+
+                            <p>Total Orders</p>
+
+                            <h3 id="totalOrders">
+                                0
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <span class="stat-icon">
+                            ♙
+                        </span>
+
+                        <div>
+
+                            <p>Customers</p>
+
+                            <h3 id="totalCustomers">
+                                0
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-dashboard-grid">
+
+                    <div class="admin-panel-card">
+
+                        <div class="admin-panel-heading">
+
+                            <div>
+
+                                <span class="eyebrow">
+                                    STORE
+                                </span>
+
+                                <h3>
+                                    Quick Actions
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="quick-actions">
+
+                            <button
+                                type="button"
+                                data-goto="products"
+                            >
+                                <span>＋</span>
+                                Add Product
+                            </button>
+
+                            <button
+                                type="button"
+                                data-goto="orders"
+                            >
+                                <span>▤</span>
+                                View Orders
+                            </button>
+
+                            <button
+                                type="button"
+                                data-goto="sellers"
+                            >
+                                <span>♙</span>
+                                Manage Sellers
+                            </button>
+
+                            <button
+                                type="button"
+                                data-goto="offers"
+                            >
+                                <span>％</span>
+                                Manage Offers
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-panel-card">
+
+                        <div class="admin-panel-heading">
+
+                            <div>
+
+                                <span class="eyebrow">
+                                    ACTIVITY
+                                </span>
+
+                                <h3>
+                                    Store Overview
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="overview-list">
+
+                            <div>
+                                <span>
+                                    Products
+                                </span>
+
+                                <strong id="overviewProducts">
+                                    0
+                                </strong>
+                            </div>
+
+
+                            <div>
+                                <span>
+                                    Orders
+                                </span>
+
+                                <strong id="overviewOrders">
+                                    0
+                                </strong>
+                            </div>
+
+
+                            <div>
+                                <span>
+                                    Customers
+                                </span>
+
+                                <strong id="overviewCustomers">
+                                    0
+                                </strong>
+                            </div>
+
+
+                            <div>
+                                <span>
+                                    Wishlist Items
+                                </span>
+
+                                <strong id="overviewWishlist">
+                                    0
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section
+                class="admin-section"
+                id="productsSection"
+            >
+
+                <div class="admin-section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            CATALOG
+                        </span>
+
+                        <h2>
+                            Products
+                        </h2>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="admin-primary-button"
+                        id="addProductButton"
+                    >
+                        + Add Product
+                    </button>
+
+                </div>
+
+
+                <div class="admin-panel-card">
+
+                    <div class="admin-table-wrapper">
+
+                        <table class="admin-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Product
+                                    </th>
+
+                                    <th>
+                                        Category
+                                    </th>
+
+                                    <th>
+                                        Price
+                                    </th>
+
+                                    <th>
+                                        Stock
+                                    </th>
+
+                                    <th>
+                                        Status
+                                    </th>
+
+                                    <th>
+                                        Action
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="adminProductsTable">
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section
+                class="admin-section"
+                id="ordersSection"
+            >
+
+                <div class="admin-section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            SALES
+                        </span>
+
+                        <h2>
+                            Orders
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-panel-card">
+
+                    <div class="admin-table-wrapper">
+
+                        <table class="admin-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Order ID
+                                    </th>
+
+                                    <th>
+                                        Customer
+                                    </th>
+
+                                    <th>
+                                        Items
+                                    </th>
+
+                                    <th>
+                                        Total
+                                    </th>
+
+                                    <th>
+                                        Status
+                                    </th>
+
+                                    <th>
+                                        Date
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="adminOrdersTable">
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section
+                class="admin-section"
+                id="sellersSection"
+            >
+
+                <div class="admin-section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            MARKETPLACE
+                        </span>
+
+                        <h2>
+                            Sellers
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+            <div class="admin-panel-card">
+
+    <div class="admin-table-wrapper">
+
+        <table class="admin-table">
+
+            <thead>
+                <tr>
+                    <th>Seller</th>
+                    <th>Business</th>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="adminSellersTable">
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+            </section>
+
+
+            <section
+                class="admin-section"
+                id="offersSection"
+            >
+
+                <div class="admin-section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            PROMOTIONS
+                        </span>
+
+                        <h2>
+                            Offers
+                        </h2>
+
+                    </div>
+
+                    <button
+                        type="button"
+                        class="admin-primary-button"
+                        id="addOfferButton"
+                    >
+                        + Add Offer
+                    </button>
+
+                </div>
+
+
+                <div class="admin-panel-card">
+
+                    <div
+                        class="offers-list"
+                        id="adminOffersList"
+                    ></div>
+
+                </div>
+
+            </section>
+
+
+            <section
+                class="admin-section"
+                id="customersSection"
+            >
+
+                <div class="admin-section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            USERS
+                        </span>
+
+                        <h2>
+                            Customers
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-panel-card">
+
+                    <div class="admin-table-wrapper">
+
+                        <table class="admin-table">
+
+                            <thead>
+
+                                <tr>
+
+                                    <th>
+                                        Name
+                                    </th>
+
+                                    <th>
+                                        Email
+                                    </th>
+
+                                    <th>
+                                        Phone
+                                    </th>
+
+                                    <th>
+                                        Joined
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="adminCustomersTable">
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <div
+        class="admin-modal"
+        id="productModal"
+        aria-hidden="true"
+    >
+
+        <div class="admin-modal-content">
+
+            <div class="admin-modal-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        CATALOG
+                    </span>
+
+                    <h2>
+                        Add Product
+                    </h2>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    data-close-modal="productModal"
+                    aria-label="Close"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <form id="productForm">
+
+                <div class="admin-form-grid">
+
+                    <div class="admin-form-group">
+
+                        <label for="adminProductName">
+                            Product Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="adminProductName"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="admin-form-group">
+
+                        <label for="adminProductCategory">
+                            Category
+                        </label>
+
+                        <select
+                            id="adminProductCategory"
+                            required
+                        >
+
+                            <option value="">
+                                Select Category
+                            </option>
+
+                            <option value="makeup">
+                                Makeup
+                            </option>
+
+                            <option value="skincare">
+                                Skincare
+                            </option>
+
+                            <option value="hair-care">
+                                Hair Care
+                            </option>
+
+                            <option value="fragrance">
+                                Fragrance
+                            </option>
+
+                            <option value="bath-body">
+                                Bath & Body
+                            </option>
+
+                            <option value="beauty-tools">
+                                Beauty Tools
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="admin-form-group">
+
+                        <label for="adminProductPrice">
+                            Price
+                        </label>
+
+                        <input
+                            type="number"
+                            id="adminProductPrice"
+                            min="0"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="admin-form-group">
+
+                        <label for="adminProductStock">
+                            Stock
+                        </label>
+
+                        <input
+                            type="number"
+                            id="adminProductStock"
+                            min="0"
+                            value="10"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="admin-primary-button full-width"
+                >
+                    Save Product
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <div
+        class="admin-modal"
+        id="offerModal"
+        aria-hidden="true"
+    >
+
+        <div class="admin-modal-content">
+
+            <div class="admin-modal-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        PROMOTION
+                    </span>
+
+                    <h2>
+                        Add Offer
+                    </h2>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="modal-close"
+                    data-close-modal="offerModal"
+                    aria-label="Close"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <form id="offerForm">
+
+                <div class="admin-form-group">
+
+                    <label for="offerTitle">
+                        Offer Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="offerTitle"
+                        placeholder="Example: Summer Beauty Sale"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="admin-form-group">
+
+                    <label for="offerDiscount">
+                        Discount
+                    </label>
+
+                    <input
+                        type="text"
+                        id="offerDiscount"
+                        placeholder="Example: 30% OFF"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="admin-primary-button full-width"
+                >
+                    Save Offer
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/products.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+</html>

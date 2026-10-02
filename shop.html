@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop beauty products at Earth & Essential.">
+    <title>Shop | Earth & Essential</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <p>Free shipping on orders over ₹999</p>
+            <a href="seller.html">Want to sell your product? Become a Seller</a>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                <span>Earth</span> & Essential
+            </a>
+
+            <nav class="desktop-nav">
+
+                <a href="index.html">Home</a>
+
+                <a href="shop.html" class="active">Shop</a>
+
+                <div class="nav-dropdown">
+
+                    <button class="nav-dropdown-button" type="button">
+                        Categories
+                        <span>⌄</span>
+                    </button>
+
+                    <div class="category-dropdown">
+
+                        <div class="dropdown-column">
+                            <h4>Makeup</h4>
+                            <a href="shop.html?category=makeup">Face Makeup</a>
+                            <a href="shop.html?category=makeup">Eye Makeup</a>
+                            <a href="shop.html?category=makeup">Lip Makeup</a>
+                            <a href="shop.html?category=makeup">Makeup Brushes</a>
+                        </div>
+
+                        <div class="dropdown-column">
+                            <h4>Skincare</h4>
+                            <a href="shop.html?category=skincare">Face Wash</a>
+                            <a href="shop.html?category=skincare">Serums</a>
+                            <a href="shop.html?category=skincare">Moisturizers</a>
+                            <a href="shop.html?category=skincare">Face Masks</a>
+                        </div>
+
+                        <div class="dropdown-column">
+                            <h4>Hair Care</h4>
+                            <a href="shop.html?category=hair-care">Shampoo</a>
+                            <a href="shop.html?category=hair-care">Conditioner</a>
+                            <a href="shop.html?category=hair-care">Hair Oil</a>
+                            <a href="shop.html?category=hair-care">Hair Styling</a>
+                        </div>
+
+                        <div class="dropdown-column">
+                            <h4>More</h4>
+                            <a href="shop.html?category=fragrance">Fragrance</a>
+                            <a href="shop.html?category=bath-body">Bath & Body</a>
+                            <a href="shop.html?category=beauty-tools">Beauty Tools</a>
+                            <a href="shop.html">View All Products</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <a href="seller.html">Become a Seller</a>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="nav-icon search-button" type="button" aria-label="Search">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M16.5 16.5L21 21"></path>
+                    </svg>
+                </button>
+
+                <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.1a4.7 4.7 0 0 1 8.8 2.6Z"></path>
+                    </svg>
+                </a>
+
+                <a href="cart.html" class="nav-icon cart-button" aria-label="Cart">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"></path>
+                        <circle cx="9" cy="20" r="1"></circle>
+                        <circle cx="18" cy="20" r="1"></circle>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </a>
+
+                <a href="account.html" class="nav-icon account-button" aria-label="Account">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="4"></circle>
+                        <path d="M4 21c.8-4 3.5-6 8-6s7.2 2 8 6"></path>
+                    </svg>
+                </a>
+
+                <button class="menu-button" type="button" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+
+        <div class="mobile-menu">
+
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+
+            <div class="mobile-category-title">Categories</div>
+
+            <a href="shop.html?category=makeup">Makeup</a>
+            <a href="shop.html?category=skincare">Skincare</a>
+            <a href="shop.html?category=hair-care">Hair Care</a>
+            <a href="shop.html?category=fragrance">Fragrance</a>
+            <a href="shop.html?category=bath-body">Bath & Body</a>
+            <a href="shop.html?category=beauty-tools">Beauty Tools</a>
+
+            <a href="seller.html">Become a Seller</a>
+            <a href="account.html">Account</a>
+
+        </div>
+
+        <div class="search-panel">
+
+            <div class="container search-panel-inner">
+
+                <form class="search-form" id="searchForm">
+
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M16.5 16.5L21 21"></path>
+                    </svg>
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search beauty products..."
+                        autocomplete="off"
+                    >
+
+                    <button type="button" class="search-close" aria-label="Close search">
+                        ×
+                    </button>
+
+                </form>
+
+                <div class="search-suggestions">
+                    <span>Popular searches</span>
+                    <a href="shop.html?category=skincare">Skincare</a>
+                    <a href="shop.html?category=makeup">Lipstick</a>
+                    <a href="shop.html?category=hair-care">Hair Care</a>
+                    <a href="shop.html?category=fragrance">Perfume</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="shop-hero">
+
+            <div class="container">
+
+                <span class="eyebrow">EARTH & ESSENTIAL</span>
+
+                <h1>Shop Beauty Essentials</h1>
+
+                <p>
+                    Discover makeup, skincare, hair care, fragrance,
+                    bath & body and beauty tools.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="shop-section">
+
+            <div class="container">
+
+                <div class="shop-layout">
+
+                    <aside class="shop-sidebar">
+
+                        <div class="filter-header">
+                            <h2>Filters</h2>
+
+                            <button
+                                type="button"
+                                id="clearFilters"
+                                class="clear-filters"
+                            >
+                                Clear
+                            </button>
+                        </div>
+
+
+                        <div class="filter-group">
+
+                            <h3>Categories</h3>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="all"
+                                    checked
+                                >
+                                <span>All Products</span>
+                            </label>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="makeup"
+                                >
+                                <span>Makeup</span>
+                            </label>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="skincare"
+                                >
+                                <span>Skincare</span>
+                            </label>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="hair-care"
+                                >
+                                <span>Hair Care</span>
+                            </label>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="fragrance"
+                                >
+                                <span>Fragrance</span>
+                            </label>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="bath-body"
+                                >
+                                <span>Bath & Body</span>
+                            </label>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="category"
+                                    value="beauty-tools"
+                                >
+                                <span>Beauty Tools</span>
+                            </label>
+
+                        </div>
+
+
+                        <div class="filter-group">
+
+                            <h3>Price</h3>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="price"
+                                    value="all"
+                                    checked
+                                >
+                                <span>All Prices</span>
+                            </label>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="price"
+                                    value="0-500"
+                                >
+                                <span>Under ₹500</span>
+                            </label>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="price"
+                                    value="500-1000"
+                                >
+                                <span>₹500 - ₹1000</span>
+                            </label>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="price"
+                                    value="1000-2000"
+                                >
+                                <span>₹1000 - ₹2000</span>
+                            </label>
+
+                            <label class="filter-option">
+                                <input
+                                    type="radio"
+                                    name="price"
+                                    value="2000+"
+                                >
+                                <span>₹2000+</span>
+                            </label>
+
+                        </div>
+
+                    </aside>
+
+
+                    <div class="shop-products">
+
+                        <div class="shop-toolbar">
+
+                            <div>
+                                <span class="product-result-count" id="productCount">
+                                    24 Products
+                                </span>
+                            </div>
+
+                            <select id="sortProducts" class="sort-select">
+                                <option value="default">Sort: Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name">Name: A to Z</option>
+                                <option value="rating">Highest Rated</option>
+                            </select>
+
+                        </div>
+
+
+                        <div
+                            class="product-grid shop-product-grid"
+                            id="productGrid"
+                        ></div>
+
+
+                        <div
+                            class="no-products"
+                            id="noProducts"
+                        >
+                            <div>♡</div>
+                            <h2>No products found</h2>
+                            <p>Try changing your filters or search.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    <span>Earth</span> & Essential
+                </a>
+
+                <p>
+                    Beauty and everyday essentials,
+                    thoughtfully selected for you.
+                </p>
+
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Pinterest</a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Shop</h3>
+
+                <a href="shop.html?category=makeup">Makeup</a>
+                <a href="shop.html?category=skincare">Skincare</a>
+                <a href="shop.html?category=hair-care">Hair Care</a>
+                <a href="shop.html?category=fragrance">Fragrance</a>
+                <a href="shop.html?category=bath-body">Bath & Body</a>
+                <a href="shop.html?category=beauty-tools">Beauty Tools</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Customer Care</h3>
+
+                <a href="account.html">My Account</a>
+                <a href="orders.html">My Orders</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="#">Contact Us</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>For Sellers</h3>
+
+                <a href="seller.html">Become a Seller</a>
+                <a href="seller.html">Sell Your Product</a>
+                <a href="#">Seller Guidelines</a>
+                <a href="#">Seller Support</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 Earth & Essential. All rights reserved.
+            </p>
+
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+   <script src="js/products.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/shop.js"></script>
+</body>
+</html>

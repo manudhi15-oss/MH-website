@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Checkout - Earth & Essential">
+    <title>Checkout | Earth & Essential</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <p>Free shipping on orders over ₹999</p>
+            <a href="seller.html">Want to sell your product? Become a Seller</a>
+        </div>
+    </div>
+
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                <span>Earth</span> & Essential
+            </a>
+
+
+            <nav class="desktop-nav">
+
+                <a href="index.html">Home</a>
+
+                <a href="shop.html">Shop</a>
+
+
+                <div class="nav-dropdown">
+
+                    <button
+                        class="nav-dropdown-button"
+                        type="button"
+                    >
+                        Categories
+                        <span>⌄</span>
+                    </button>
+
+
+                    <div class="category-dropdown">
+
+                        <div class="dropdown-column">
+
+                            <h4>Makeup</h4>
+
+                            <a href="shop.html?category=makeup">
+                                Face Makeup
+                            </a>
+
+                            <a href="shop.html?category=makeup">
+                                Eye Makeup
+                            </a>
+
+                            <a href="shop.html?category=makeup">
+                                Lip Makeup
+                            </a>
+
+                            <a href="shop.html?category=makeup">
+                                Makeup Brushes
+                            </a>
+
+                        </div>
+
+
+                        <div class="dropdown-column">
+
+                            <h4>Skincare</h4>
+
+                            <a href="shop.html?category=skincare">
+                                Face Wash
+                            </a>
+
+                            <a href="shop.html?category=skincare">
+                                Serums
+                            </a>
+
+                            <a href="shop.html?category=skincare">
+                                Moisturizers
+                            </a>
+
+                            <a href="shop.html?category=skincare">
+                                Face Masks
+                            </a>
+
+                        </div>
+
+
+                        <div class="dropdown-column">
+
+                            <h4>Hair Care</h4>
+
+                            <a href="shop.html?category=hair-care">
+                                Shampoo
+                            </a>
+
+                            <a href="shop.html?category=hair-care">
+                                Conditioner
+                            </a>
+
+                            <a href="shop.html?category=hair-care">
+                                Hair Oil
+                            </a>
+
+                            <a href="shop.html?category=hair-care">
+                                Hair Styling
+                            </a>
+
+                        </div>
+
+
+                        <div class="dropdown-column">
+
+                            <h4>More</h4>
+
+                            <a href="shop.html?category=fragrance">
+                                Fragrance
+                            </a>
+
+                            <a href="shop.html?category=bath-body">
+                                Bath & Body
+                            </a>
+
+                            <a href="shop.html?category=beauty-tools">
+                                Beauty Tools
+                            </a>
+
+                            <a href="shop.html">
+                                View All Products
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <a href="seller.html">
+                    Become a Seller
+                </a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button
+                    class="nav-icon search-button"
+                    type="button"
+                    aria-label="Search"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <circle
+                            cx="11"
+                            cy="11"
+                            r="7"
+                        ></circle>
+
+                        <path
+                            d="M16.5 16.5L21 21"
+                        ></path>
+                    </svg>
+                </button>
+
+
+                <a
+                    href="wishlist.html"
+                    class="nav-icon"
+                    aria-label="Wishlist"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M20.8 8.7c0 5.5-8.8 10.3-8.8 10.3S3.2 14.2 3.2 8.7A4.7 4.7 0 0 1 12 6.1a4.7 4.7 0 0 1 8.8 2.6Z"
+                        ></path>
+                    </svg>
+
+                    <span class="wishlist-count">
+                        0
+                    </span>
+                </a>
+
+
+                <a
+                    href="cart.html"
+                    class="nav-icon cart-button"
+                    aria-label="Cart"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 7H6"
+                        ></path>
+
+                        <circle
+                            cx="9"
+                            cy="20"
+                            r="1"
+                        ></circle>
+
+                        <circle
+                            cx="18"
+                            cy="20"
+                            r="1"
+                        ></circle>
+                    </svg>
+
+                    <span class="cart-count">
+                        0
+                    </span>
+                </a>
+
+
+                <a
+                    href="account.html"
+                    class="nav-icon"
+                    aria-label="Account"
+                >
+                    <svg viewBox="0 0 24 24">
+                        <circle
+                            cx="12"
+                            cy="8"
+                            r="4"
+                        ></circle>
+
+                        <path
+                            d="M4 21c.8-4 3.5-6 8-6s7.2 2 8 6"
+                        ></path>
+                    </svg>
+                </a>
+
+
+                <button
+                    class="menu-button"
+                    type="button"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="mobile-menu">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="shop.html">
+                Shop
+            </a>
+
+            <div class="mobile-category-title">
+                Categories
+            </div>
+
+            <a href="shop.html?category=makeup">
+                Makeup
+            </a>
+
+            <a href="shop.html?category=skincare">
+                Skincare
+            </a>
+
+            <a href="shop.html?category=hair-care">
+                Hair Care
+            </a>
+
+            <a href="shop.html?category=fragrance">
+                Fragrance
+            </a>
+
+            <a href="shop.html?category=bath-body">
+                Bath & Body
+            </a>
+
+            <a href="shop.html?category=beauty-tools">
+                Beauty Tools
+            </a>
+
+            <a href="seller.html">
+                Become a Seller
+            </a>
+
+            <a href="account.html">
+                Account
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="checkout-header">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    SECURE CHECKOUT
+                </span>
+
+                <h1>
+                    Complete Your Order
+                </h1>
+
+                <p>
+                    Enter your details and choose your
+                    preferred payment method.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="checkout-section">
+
+            <div class="container checkout-layout">
+
+
+                <div class="checkout-main">
+
+
+                    <div class="checkout-card">
+
+                        <div class="checkout-card-heading">
+
+                            <span class="checkout-step">
+                                01
+                            </span>
+
+                            <div>
+                                <h2>
+                                    Contact Information
+                                </h2>
+
+                                <p>
+                                    Where can we reach you?
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group full-width">
+
+                                <label for="fullName">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                >
+
+                                <small
+                                    class="form-error"
+                                    id="fullNameError"
+                                ></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Mobile Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="10-digit mobile number"
+                                    maxlength="10"
+                                    autocomplete="tel"
+                                >
+
+                                <small
+                                    class="form-error"
+                                    id="phoneError"
+                                ></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                >
+
+                                <small
+                                    class="form-error"
+                                    id="emailError"
+                                ></small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="checkout-card">
+
+                        <div class="checkout-card-heading">
+
+                            <span class="checkout-step">
+                                02
+                            </span>
+
+                            <div>
+                                <h2>
+                                    Delivery Address
+                                </h2>
+
+                                <p>
+                                    Where should we deliver your order?
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <div class="form-group full-width">
+
+                                <label for="address">
+                                    Full Address
+                                </label>
+
+                                <textarea
+                                    id="address"
+                                    name="address"
+                                    rows="4"
+                                    placeholder="House / Flat / Street / Area"
+                                ></textarea>
+
+                                <small
+                                    class="form-error"
+                                    id="addressError"
+                                ></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="city">
+                                    City
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="city"
+                                    name="city"
+                                    placeholder="Enter city"
+                                >
+
+                                <small
+                                    class="form-error"
+                                    id="cityError"
+                                ></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="state">
+                                    State
+                                </label>
+
+                                <select
+                                    id="state"
+                                    name="state"
+                                >
+
+                                    <option value="">
+                                        Select State
+                                    </option>
+
+                                    <option value="Gujarat">
+                                        Gujarat
+                                    </option>
+
+                                    <option value="Maharashtra">
+                                        Maharashtra
+                                    </option>
+
+                                    <option value="Rajasthan">
+                                        Rajasthan
+                                    </option>
+
+                                    <option value="Madhya Pradesh">
+                                        Madhya Pradesh
+                                    </option>
+
+                                    <option value="Delhi">
+                                        Delhi
+                                    </option>
+
+                                    <option value="Other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                                <small
+                                    class="form-error"
+                                    id="stateError"
+                                ></small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="pincode">
+                                    Pincode
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="pincode"
+                                    name="pincode"
+                                    placeholder="6-digit pincode"
+                                    maxlength="6"
+                                    inputmode="numeric"
+                                >
+
+                                <small
+                                    class="form-error"
+                                    id="pincodeError"
+                                ></small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="checkout-card">
+
+                        <div class="checkout-card-heading">
+
+                            <span class="checkout-step">
+                                03
+                            </span>
+
+                            <div>
+                                <h2>
+                                    Payment Method
+                                </h2>
+
+                                <p>
+                                    Choose how you want to pay.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="payment-options">
+
+
+                            <label class="payment-option">
+
+                                <input
+                                    type="radio"
+                                    name="paymentMethod"
+                                    value="cod"
+                                    checked
+                                >
+
+                                <span class="payment-radio"></span>
+
+                                <span class="payment-content">
+
+                                    <strong>
+                                        Cash on Delivery
+                                    </strong>
+
+                                    <small>
+                                        Pay when your order arrives.
+                                    </small>
+
+                                </span>
+
+                            </label>
+
+
+                            <label class="payment-option">
+
+                                <input
+                                    type="radio"
+                                    name="paymentMethod"
+                                    value="upi"
+                                >
+
+                                <span class="payment-radio"></span>
+
+                                <span class="payment-content">
+
+                                    <strong>
+                                        UPI
+                                    </strong>
+
+                                    <small>
+                                        Demo payment using UPI.
+                                    </small>
+
+                                </span>
+
+                            </label>
+
+
+                            <label class="payment-option">
+
+                                <input
+                                    type="radio"
+                                    name="paymentMethod"
+                                    value="card"
+                                >
+
+                                <span class="payment-radio"></span>
+
+                                <span class="payment-content">
+
+                                    <strong>
+                                        Credit / Debit Card
+                                    </strong>
+
+                                    <small>
+                                        Demo card payment.
+                                    </small>
+
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <div
+                            class="demo-payment-note"
+                            id="demoPaymentNote"
+                        >
+                            This is a demo website.
+                            No real payment will be processed.
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="checkout-error"
+                        id="checkoutError"
+                    ></div>
+
+
+                    <button
+                        type="button"
+                        class="place-order-button"
+                        id="placeOrder"
+                    >
+                        <span>
+                            Place Order
+                        </span>
+
+                        <span>
+                            →
+                        </span>
+                    </button>
+
+
+                    <p class="secure-note">
+                        🔒 Your information is used only
+                        for this demo order.
+                    </p>
+
+
+                </div>
+
+
+
+                <aside class="checkout-sidebar">
+
+
+                    <div class="order-summary-card">
+
+                        <div class="summary-heading">
+
+                            <div>
+
+                                <span class="eyebrow">
+                                    YOUR ORDER
+                                </span>
+
+                                <h2>
+                                    Order Summary
+                                </h2>
+
+                            </div>
+
+                            <span
+                                id="summaryItemCount"
+                                class="summary-item-count"
+                            >
+                                0 items
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            class="checkout-products"
+                            id="checkoutProducts"
+                        ></div>
+
+
+                        <div
+                            class="empty-checkout"
+                            id="emptyCheckout"
+                            style="display: none;"
+                        >
+
+                            <div>
+                                Your cart is empty.
+                            </div>
+
+                            <a href="shop.html">
+                                Continue Shopping
+                            </a>
+
+                        </div>
+
+
+                        <div class="summary-divider"></div>
+
+
+                        <div class="summary-row">
+
+                            <span>
+                                Subtotal
+                            </span>
+
+                            <strong id="checkoutSubtotal">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="summary-row">
+
+                            <span>
+                                Shipping
+                            </span>
+
+                            <strong id="checkoutShipping">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+
+                        <div
+                            class="shipping-message"
+                            id="shippingMessage"
+                        >
+                            Free shipping on orders over ₹999
+                        </div>
+
+
+                        <div class="summary-divider"></div>
+
+
+                        <div class="summary-total">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong id="checkoutTotal">
+                                ₹0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="checkout-benefits">
+
+                        <div>
+                            <strong>
+                                ✓ Secure Checkout
+                            </strong>
+
+                            <span>
+                                Your details stay private.
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <strong>
+                                ✓ Easy Ordering
+                            </strong>
+
+                            <span>
+                                Simple and quick checkout.
+                            </span>
+                        </div>
+
+
+                        <div>
+                            <strong>
+                                ✓ Customer Support
+                            </strong>
+
+                            <span>
+                                We're here to help.
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo">
+                    <span>Earth</span> & Essential
+                </a>
+
+                <p>
+                    Beauty and everyday essentials,
+                    thoughtfully selected for you.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Shop
+                </h3>
+
+                <a href="shop.html?category=makeup">
+                    Makeup
+                </a>
+
+                <a href="shop.html?category=skincare">
+                    Skincare
+                </a>
+
+                <a href="shop.html?category=hair-care">
+                    Hair Care
+                </a>
+
+                <a href="shop.html?category=fragrance">
+                    Fragrance
+                </a>
+
+                <a href="shop.html?category=bath-body">
+                    Bath & Body
+                </a>
+
+                <a href="shop.html?category=beauty-tools">
+                    Beauty Tools
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Customer Care
+                </h3>
+
+                <a href="account.html">
+                    My Account
+                </a>
+
+                <a href="orders.html">
+                    My Orders
+                </a>
+
+                <a href="wishlist.html">
+                    Wishlist
+                </a>
+
+                <a href="cart.html">
+                    Cart
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    For Sellers
+                </h3>
+
+                <a href="seller.html">
+                    Become a Seller
+                </a>
+
+                <a href="seller.html">
+                    Sell Your Product
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                © 2026 Earth & Essential.
+                All rights reserved.
+            </p>
+
+            <div>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
+
+</body>
+</html>
